@@ -15,12 +15,16 @@ setInterval(function updateBall(){
 	e = document.getElementById("e").value;
 	if (air != ""){
 		ar = Number(air)/10;
+	} else {
+		ar = 0;
 	}
 	if (grv != ""){
 		grav = Number(grv)/10;
 	}
 	if (e != ""){
 		e_ = Number(e)/10
+	} else {
+		e_ = 0;
 	}
 	r = ball.style.width.slice(0,-2);
 	r = Number(r);
